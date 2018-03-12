@@ -47,9 +47,9 @@ A **gauge** metric uses the last value.
 ### Histogram
 The **histogram** metric calculates the number of hits of values at predefined intervals.
 
-In this package, a percentiles are not used, instead of them it is suggested to use the **histogram** metric. For example, we need to know how fast our application generates a response. For this, let's compare two approaches: using the percentiles and the **histogram** metric.
+In this package, a percentiles are not used, instead of them it is suggested to use the **histogram** metric. For example, we need to know how fast our application generates a response. For this, let's compare two approaches: using the percentiles and the **histogram** metric.  
 ![percentiles approach](/images/hist2.png)
-![histogram approach](/images/hist1.png)
+![histogram approach](/images/hist1.png)  
 The first picture shows the percentile approach. It shows that during the problems on the network most of the answers of the service was unforgivably large. But if we think sensibly, we do not need to know the peak response time, we are always interested in what percentage of customers can get an answer for a certain time. The approach shown in the second picture is better for this. It shows not only the main problem, but it also shows that the response time after network recovery is still worse than before the accident.
 
 For example:
