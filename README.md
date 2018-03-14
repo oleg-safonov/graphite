@@ -1,4 +1,5 @@
 # Graphite golang
+[![Coverage Status](https://coveralls.io/repos/github/oleg-safonov/graphite/badge.svg?branch=master)](https://coveralls.io/github/oleg-safonov/graphite?branch=master)
 
 The graphite package was written for cases when an application is running on thousands of instances and each of the instances generates hundreds of thousands of events per second. The graphite package aggregates metrics over a time interval and sends application metrics to the graphite. 
 
